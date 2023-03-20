@@ -1,0 +1,5 @@
+{
+    "liveServer.settings.port": 5501,
+    "git.ignoreLimitWarning": true,
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName} ${separator} [Branch: master]"
+}

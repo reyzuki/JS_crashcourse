@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
+  }
+
+  body {
+    background-color: whitesmoke;
+    padding: 0 20px;
+  }
+
+  header {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .logo-wrap {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  color: #0da7de;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.logo-wrap p {
+    font-size: 20px;
+    color: #ff9600;
+    padding: 2px 10px;
+    border: 1px solid #0da7de;
+    border-radius: 5px;
+  }
+
+  .logo-wrap p:active {
+    background-color: #0da7de;
+  }
+  .error {
+    outline: 3px solid #ff9600;
+  }
+
+  .todo-add {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
+  }
+
+  .todo-add * {
+    background-color: transparent;
+    text-shadow: 0 0 1px grey;
+    font-size: 24px;
+    outline: none;
+    border: none;
+    font-weight: lighter;
+  }
+
+
+  .todo-add > input {
+    width: 75%;
+    padding: 3px;
+    color: #0da7de;
+  }
+  
+  .todo-add > button {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #0da7de;
+    color: whitesmoke;
+    width: 25%;
+  }
+  
+  .todo-add > button:active {
+    background-color: #0d91de;
+  }
+  
+  main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  
+  main h2 {
+    color: #ff9600;
+    text-align: center;
+  }
+  
+  main ul {
+    margin-top: 30px;
+    list-style: none;
+  }
+  
+  main ul li {
+    box-shadow: 0 0 5px grey;
+    background-color: #0da7de;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    margin: 15px 0;
+    justify-content: space-between;
+  }
+  
+  main ul li * {
+    font-size: 20px;
+    color: whitesmoke;
+  }
+  
+  main .todo {
+    width: 100%;
+  }
+  
+  main .btns {
+    width: auto;
+    display: flex;
+    padding: 5px 0;
+    justify-items: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+  main ul li button {
+    margin-left: 5px;
+    width: 65px;
+    max-height: 30px;
+    outline: none;
+    border: none;
+    text-align: center;
+    border-radius: 3px;
+    color: #ff9600;
+    box-shadow: 0 1.5px grey;
+    transition: color 0.7s ease-in-out;
+  }
+  
+  main ul li button:active {
+    background-color: #ff9600;
+  }
+  
+  main .edit-mode {
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    color: #0da7de;
+    font-weight: lighter;
+    padding: 0 5px;
+  }
+  
+  main .save {
+    margin: 0 20px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  /* modal style */
+  #modal {
+    background-color: #ff9500c0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    display: none;
+    padding: 30px;
+  }
+  
+  #modal .modal-box {
+    background-color: #0da7de;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin: auto;
+    width: 500px;
+    height: 50%;
+    border-radius: 5px;
+    box-shadow: 0 0 2px grey;
+  }
+  
+  #modal span {
+    width: 10%;
+    color: grey;
+    font-size: 50px;
+    text-align: center;
+    right: 0;
+  }
+  
+  #modal .sign-in {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  #modal .sign-in * {
+    font-size: 22px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 95%;
+    margin: 10px auto;
+  }
+  
+  #modal .sign-in button:active {
+    background-color: #ff9500c0;
+  }
+  
+  
